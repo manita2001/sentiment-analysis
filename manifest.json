@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "Hate Detection",
+  "version": "1.0",
+  "description": "Detect hate and offensive text.",
+  "permissions": [
+    "activeTab",
+    "http://localhost:8502/"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_popup": "popup.html"
+  }
+}
